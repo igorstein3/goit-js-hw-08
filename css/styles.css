@@ -1,24 +1,33 @@
- body {
-    min-height: 100vh;
+body {
+  min-height: 100vh;
 }
 ul {
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 .gallery-image {
-    width: 360px;
-    height: 200px;
+  width: 360px;
+  height: 200px;
+}
+.gallery-item {
+  transition: transform 250ms ease-in-out;
+}
+.gallery-item:hover {
+  transform: scale(1.04);
+}
+.gallery-link {
+  cursor: zoom-in;
 }
